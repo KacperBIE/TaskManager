@@ -4,7 +4,7 @@ import os
 import time
 
 TODO_FILE = "zadania.json"
-HIDE_AFTER = 604800  # Czas ukrycia w sekundach (domyślnie 7 dni)
+HIDE_AFTER = 86400  # Czas ukrycia w sekundach (domyślnie 1 dzień)
 
 def load_tasks():
     if os.path.exists(TODO_FILE) and os.path.getsize(TODO_FILE) > 0:
