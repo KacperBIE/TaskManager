@@ -1,4 +1,4 @@
-# Lista TO-DO w Pythonie
+# Task Manager w Pythonie
 
 Aplikacja konsolowa do zarządzania listami zadań (TO-DO) z obsługą wielu list, zapisem do pliku oraz automatycznym ukrywaniem ukończonych zadań po określonym czasie.
 
@@ -15,57 +15,57 @@ Aplikacja konsolowa do zarządzania listami zadań (TO-DO) z obsługą wielu lis
 - Python 3.6+
 
 ## Instalacja
-Pobierz skrypt `todo.py` i umieść go w dowolnym katalogu.
+Pobierz skrypt `tm.py` i umieść go w dowolnym katalogu.
 
 ## Użycie
 Aby uruchomić aplikację, użyj poniższych komend w terminalu:
 
 ### Dodawanie zadania
 ```sh
-python todo.py add <nazwa_listy> "Treść zadania"
+py tm.py dodaj <nazwa_listy> "Treść zadania"
 ```
 Przykład:
 ```sh
-python todo.py add Praca "Przygotować raport"
+py tm.py dodaj Praca "Przygotować raport"
 ```
 
 ### Wyświetlanie listy zadań
 ```sh
-python todo.py list <nazwa_listy>
+py tm.py lista <nazwa_listy>
 ```
 Przykład:
 ```sh
-python todo.py list Praca
+py tm.py lista Praca
 ```
-Aby pokazać ukryte zadania, dodaj flagę `--show-hidden`:
+Aby pokazać ukryte zadania, dodaj flagę `--pokaz-ukryte`:
 ```sh
-python todo.py list Praca --show-hidden
+py tm.py lista Praca --pokaz-ukryte
 ```
 
 ### Usuwanie zadania
 ```sh
-python todo.py remove <nazwa_listy> <numer_zadania>
+py tm.py usun <nazwa_listy> <numer_zadania>
 ```
 Przykład:
 ```sh
-python todo.py remove Praca 1
+py tm.py usun Praca 1
 ```
 
 ### Oznaczanie zadania jako ukończone
 ```sh
-python todo.py complete <nazwa_listy> <numer_zadania>
+py tm.py ukoncz <nazwa_listy> <numer_zadania>
 ```
 Przykład:
 ```sh
-python todo.py complete Praca 1
+py tm.py ukoncz Praca 1
 ```
 
 ## Przechowywanie danych
-Wszystkie listy zadań są zapisywane w jednym pliku `todo_lists.json`, co umożliwia ich trwałe przechowywanie między uruchomieniami programu.
+Wszystkie listy zadań są zapisywane w jednym pliku `zadania.json`, co umożliwia ich trwałe przechowywanie między uruchomieniami programu.
 
 ## Uwagi
-- Domyślnie ukończone zadania są ukrywane po 24 godzinach. Można je ponownie wyświetlić za pomocą `--show-hidden`.
-- Jeśli plik `todo_lists.json` nie istnieje, zostanie utworzony automatycznie.
+- Domyślnie ukończone zadania są ukrywane po 24 godzinach. Można je ponownie wyświetlić za pomocą `--pokaz-ukryte`.
+- Jeśli plik `zadania.json` nie istnieje, zostanie utworzony automatycznie.
 
 ## Autor
 Aplikacja stworzona w Pythonie jako prosty menedżer zadań działający w wierszu poleceń.
