@@ -67,6 +67,4 @@ Wszystkie listy zadań są zapisywane w jednym pliku `zadania.json`, co umożliw
 - Domyślnie ukończone zadania są ukrywane po 24 godzinach. Można je ponownie wyświetlić za pomocą `--pokaz-ukryte`.
 - Jeśli plik `zadania.json` nie istnieje, zostanie utworzony automatycznie.
 
-## Autor
-Aplikacja stworzona w Pythonie jako prosty menedżer zadań działający w wierszu poleceń.
 
