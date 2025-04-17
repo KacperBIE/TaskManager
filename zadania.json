@@ -1,0 +1,10 @@
+{
+    "lista1": [
+        {
+            "task": "zadanie1",
+            "completed": false,
+            "timestamp": 1744906895.4026563,
+            "hidden": false
+        }
+    ]
+}
